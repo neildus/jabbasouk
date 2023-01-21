@@ -1,0 +1,45 @@
+// Specific CSS for your home-page
+
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+  background: url(https://wohomedia.b-cdn.net/lewagon/jabbasouk/jabba.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.page-title {
+padding-left: 50px;
+padding-top: 20%;
+}
+
+
+h1 {
+  font-family: 'Poller One', cursive;
+  font-size: 50px;
+  color: #FFE81F;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  color: #ffffff;
+}
