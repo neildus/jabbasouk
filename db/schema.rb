@@ -10,32 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_24_153804) do
+ActiveRecord::Schema[7.0].define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "bookings", force: :cascade do |t|
-    t.string "AddUserIdToBooking"
-    t.string "AddProductIdToBooking"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.integer "price"
-    t.string "description"
-    t.string "title"
-    t.string "AddUserIdToProduct"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "ratings", force: :cascade do |t|
-    t.integer "rating"
-    t.string "AddUserIdToRating"
-    t.string "AddBookingIdToRating"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
 end
