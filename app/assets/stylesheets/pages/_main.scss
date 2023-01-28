@@ -1,0 +1,42 @@
+// Main configuration CSS styles for all pages
+
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+  background-color: rgb(238, 238, 238) !important;
+}
+
+.main-container
+{
+  width: 1200px;
+  margin: auto;
+}
+
+.main-devise-container
+{
+  width: 1200px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-family: 'Poller One', cursive;
+  font-size: 50px;
+  color: #FFE81F;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+
+p {
+  font-size: 16px;
+  color: #000000;
+}
