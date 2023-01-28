@@ -2,7 +2,7 @@
 
 
 .devise-c-form {
-  background-color: #ffffff;
+  background-color: #ffffff00;
   padding: 50px;
   width: 500px;
   margin:auto;
@@ -10,7 +10,10 @@
   box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
   -webkit-box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
   -moz-box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
-  color: #000;
+  color: rgb(255, 213, 78);
+  border: 3px !important;
+  border-color: rgba(255, 214, 78, 0.837) !important;
+  border-style: solid !important;
 }
 
 .hero-home
