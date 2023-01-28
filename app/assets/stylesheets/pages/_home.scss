@@ -1,1 +1,68 @@
 // Specific CSS for your home-page
+// Specific CSS for your home-page
+
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+  background-color: #000;
+}
+
+
+.page-title {
+padding-left: 50px;
+padding-top: 20%;
+}
+
+
+h1 {
+  font-family: 'Poller One', cursive;
+  font-size: 50px;
+  color: #FFE81F;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #FFE81F;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.signin-form {
+  background-color: #ffffff;
+  padding: 50px;
+  width: 500px;
+  margin:auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  color: #000;
+
+}
