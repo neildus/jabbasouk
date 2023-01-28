@@ -16,14 +16,18 @@
 .hero-home
 {
   margin-top: 50px;
+  margin-bottom: 50px;
   
 }
 
 .home-container{
-  margin: auto;
-  background-color: #fff;
-  padding: 50px 0 50px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px;
   border-radius: 20px;
+  border-color: rgb(255, 213, 78);
+  border-style: solid;
+  overflow: hidden;
+  padding: 50px 0 50px 0;
 }
 
 .card {
@@ -33,4 +37,18 @@
   -moz-box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
   min-width: 350px;
   max-width: 350px;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 3px !important;
+  border-color: rgb(255, 213, 78) !important;
+  border-style: solid !important;
+}
+
+.card:hover {
+  box-shadow: -1px 1px 20px 12px rgba(255,213,78,0.75);
+  -webkit-box-shadow: -1px 1px 20px 12px rgba(255,213,78,0.75);
+  -moz-box-shadow: -1px 1px 20px 12px rgba(255,213,78,0.75);
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 3px !important;
+  border-color: rgba(255, 214, 78, 0.837) !important;
+  border-style: solid !important;
 }

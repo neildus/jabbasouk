@@ -1,11 +1,12 @@
-// Main configuration CSS styles for all pages
-
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-
+// Main configuration CSS styles for all page
 
 body {
-  background-color: rgb(238, 238, 238) !important;
+  background-image: url(https://wohomedia.b-cdn.net/lewagon/jabbasouk/bg-stars.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
 .main-container
@@ -23,20 +24,52 @@ body {
 }
 
 h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 50px;
-  color: #000000;
+  font-family: 'star_jediregular';
+  font-size: 69px;
+  color: rgb(255, 213, 78);
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  font-family: 'star_jediregular';
+  font-size: 48px;
   font-weight: 600;
-  color: #000000;
+  color: rgb(255, 213, 78);
 }
 
+h3 {
+  font-family: 'star_jediregular';
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(255, 213, 78);
+}
+
+h4 {
+  font-family: 'star_jediregular';
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(255, 213, 78);
+}
+
+h5 {
+  font-family: 'star_jediregular';
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 213, 78);
+}
+
+h6 {
+  font-family: 'star_jediregular';
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 213, 78);
+}
 
 p {
-  font-size: 16px;
-  color: #000000;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+hr {
+  background-color: rgb(255, 213, 78);
+  height: 1px;
 }
