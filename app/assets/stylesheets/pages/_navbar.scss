@@ -1,6 +1,36 @@
 // CSS style for the top navigation bar
 
 .navbar {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px;
+  border-radius: 20px;
+  border-color: rgb(255, 213, 78);
+  border-style: solid;
   overflow: hidden;
+  padding: 15px 15px 15px 15px;
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.navbar  a {
+  float: left;
+  font-size: 16px;
+  font-family: "orbitron", sans-serif;
+  color: rgb(255, 213, 78);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.navbar  a:hover {
+  background: rgb(252, 221, 127);
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.nav-item{
+  padding: 0 10px 0 10px;
 }
