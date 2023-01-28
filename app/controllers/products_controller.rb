@@ -31,11 +31,16 @@ class ProductsController < ApplicationController
   private
 
   def set_product
-    @product = Product.find(params[:id])
-  end
+    def set_product
+      @product = Product.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      flash[:alert] = "Product not found"
+      redirect_to products_path
+    end
+      end
 
   def product_params
-    params.require(:product).permit(:title, :price, :description)
+    params.require(:product).permit(:title, :price, :description, :photo)
   end
 
 end

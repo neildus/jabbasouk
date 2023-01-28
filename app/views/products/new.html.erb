@@ -5,7 +5,8 @@
         <%= simple_form_for @product do |f| %>
           <%= f.input :title, placeholder: 'Insert your product title here' %>
           <%= f.input :description, placeholder: 'What is your product about', as: :text, :input_html => { :cols => 5, :rows => 10 } %>
-          <%= f.input :price , as: :numeric %>
+          <%= f.input :price, as: :numeric %>
+          <%= f.input :photo %>
           <%= f.submit class: 'btn btn-flat' %>
         <% end %>
      
