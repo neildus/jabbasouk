@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow-x: hidden;
 
 }
 
@@ -72,6 +73,12 @@ p {
 }
 
 hr {
-  background-color: rgb(255, 213, 78);
-  height: 1px;
+  background-color: rgb(255, 214, 78);
+  height: 5px;
+  opacity: 1 !important;
+}
+
+.linkover:hover {
+  color: rgb(255, 214, 78);
+  text-decoration: underline;
 }
