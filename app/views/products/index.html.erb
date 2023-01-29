@@ -24,12 +24,12 @@
 				<br>
 				<audio id="player" src="https://wohomedia.b-cdn.net/lewagon/jabbasouk/cantina.mp3"></audio>
 
-<button id="playPause" onclick="playPause()" class="button">Mute Radio</button>
+<button id="playPause" onclick="playPause()" class="button">Play Radio</button>
 
 <script>
   var player = document.getElementById("player");
   player.volume = 0.1;
-  player.autoplay = true;
+  player.autoplay = false;
   player.loop = true; // added looping
 
 	player.addEventListener('ended', function(){
