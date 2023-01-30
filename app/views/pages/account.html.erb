@@ -1,0 +1,17 @@
+<div class="main-container">
+  <div class="home-container p-5 mt-5">
+
+    <h1> My Account </h1>
+    <p> Here you can see your orders and your profile details </p>
+    <br>
+    <h4 style="font-family:'orbitron', sans-serif;"> Hey <%= current_user.name %>!</h4>
+    <%= link_to "Change Password", edit_user_password_path, class: "linkover" %> | 
+    <br><br>
+    <hr>
+    <h6 style="font-family:'orbitron', sans-serif;"> Here are your recent orders:</h6>
+
+
+
+
+  </div>
+<div>
