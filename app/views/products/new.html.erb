@@ -1,18 +1,33 @@
 <div class="main-devise-container">
-<div class="devise-c-form">
+  <div class="d-flex justify-content-between align-content-*-center ">
+    <div class="col mb-1">
+      <div class="devise-c-form">
 
-        <h3>Create a new product</h3>
+       <h3>Create a new product</h3>
         <br>
         <p> Add your product to sell here, and we will take care of the rest! </p>
         <br>
         <%= simple_form_for @product do |f| %>
-          <%= f.input :title, placeholder: 'Insert your product title here' %>
-          <%= f.input :description, placeholder: 'What is your product about', as: :text, :input_html => { :cols => 5, :rows => 5 } %>
-          <%= f.input :price, as: :numeric, placeholder: '500' %>
-          <%= f.input :photo, placeholder: 'https://linktoyourimage.jpg' %>
+          <%= f.input :title, placeholder: "Insert your product title here" %>
+          <%= f.input :description, placeholder: "What is your product about", as: :text, :input_html => { :cols => 5, :rows => 5 } %>
+          <%= f.input :price, as: :numeric, placeholder: "500" %>
+          <%= f.input :photo, placeholder: "https://linktoyourimage.jpg" %>
           <br>
-          <%= f.submit class: 'button' %>
+          <%= f.submit class: "button" %>
         <% end %>
      
-</div>
+      </div>
+    </div>
+    <div class="col justify-content-*-center">
+  <img src="https://wohomedia.b-cdn.net/lewagon/jabbasouk/hunter.png" width="600px">
+  <br><br>
+  <div class="text-center">
+  <h2> * Free bounty offers! *</h2>
+  <p> List your item for free on our website and enjoy free bounty packages! Offers exclusively to JabbaSouk customers. If ever you are being hunted by a bounty hunter note that we offer the posibility to pay your bounty and guess what! You will be staying alive. Contact our bounty hunter department for more info. </p>
+  <br>
+  <button class="button">
+	<%= link_to "Back to store", "/" %>
+	</button>
+  </div>
+  </div>
 </div>
