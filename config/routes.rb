@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "products#index"
   get 'about', to: 'pages#about'
   get 'account', to: 'pages#account'
+  get 'yoda', to: 'pages#yoda'
 
   resources :users
   resources :products

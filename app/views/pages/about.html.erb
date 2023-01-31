@@ -2,12 +2,12 @@
 <div class="col m-auto mt-5" style="text-align: center;">
 	<audio id="player" src="https://wohomedia.b-cdn.net/lewagon/jabbasouk/Star_Wars_Main_Theme_Song.mp3"></audio>
 
-<button id="playPause" onclick="playPause()" class="button">Mute Theme Song</button>
+<button id="playPause" onclick="playPause()" class="button"> Play Theme Song</button>
 
 <script>
   var player = document.getElementById("player");
   player.volume = 0.1;
-  player.autoplay = true;
+  player.autoplay = false;
   player.loop = false; // added looping
 
 	player.addEventListener('ended', function(){
