@@ -1,1 +1,63 @@
-<h1 style="margin-top: 50px; text-align:center;"> This page is coming soon </h1>
+
+<div class="col m-auto mt-5" style="text-align: center;">
+	<audio id="player" src="https://wohomedia.b-cdn.net/lewagon/jabbasouk/Star_Wars_Main_Theme_Song.mp3"></audio>
+
+<button id="playPause" onclick="playPause()" class="button">Mute Theme Song</button>
+
+<script>
+  var player = document.getElementById("player");
+  player.volume = 0.1;
+  player.autoplay = true;
+  player.loop = false; // added looping
+
+	player.addEventListener('ended', function(){
+    this.currentTime = 0;
+    this.play();
+}, false);
+
+  var playPauseButton = document.getElementById("playPause");
+
+  function playPause() {
+    if (player.paused) {
+      player.play();
+      playPauseButton.innerHTML = "Pause";
+    } else {
+      player.pause();
+      playPauseButton.innerHTML = "Play";
+    }
+		
+  }
+</script>
+
+
+</div>
+<div class="star-wars-intro">
+
+  <p class="intro-text">
+    A few days ago, at Le Wagon...
+  </p>
+
+  <h2 class="main-logo">
+    <img src="https://wohomedia.b-cdn.net/lewagon/jabbasouk/Lewagon.png">
+  </h2>
+
+  <div class="main-content">
+
+    <div class="title-content">
+      <p class="content-header">JabbaSouk Web App</p>
+
+      <br>
+
+      <p class="content-body">
+
+Greetings and welcome to JabbaSouk, the premier destination for all your shopping needs in the galaxy. Here at our marketplace, we believe that everyone, no matter where they may be located, should have access to the finest goods and products that the universe has to offer. That's why we've harnessed the power of teleportation technology to bring the best of the galaxy right to your doorstep. <br> <br>
+Our mission is to offer a unique shopping experience that is both convenient and enjoyable. Our marketplace features an ever-expanding collection of products from across the galaxy, so you can easily find what you need in one place. From the latest and greatest technology, to the most exotic and rare items, we have it all. Whether you're searching for the perfect gift, a new weapon to help you on your next adventure, or just looking to treat yourself, you'll find everything you need here at JabbaSouk.<br> <br>
+We understand that when you're shopping, you want to be sure that you're getting the best products and the best deals. That's why we only offer products from reputable suppliers, and we make sure to negotiate the best prices for our customers. We believe that everyone should have access to quality products at an affordable price, and that's why we work hard to bring you the best value for your money.<br> <br>
+At JabbaSouk, we pride ourselves on our advanced teleportation technology. We know that when you order something, you want to receive it as soon as possible. That's why we've developed a system that allows us to teleport products directly to your location in the blink of an eye. No matter where you are in the galaxy, you'll never have to worry about long wait times or shipping costs. Simply place your order, and your new item will be with you in no time. <br> <br> <br>
+Whether you're a Jedi Master, a Sith Lord, a bounty hunter, or a smuggler, JabbaSouk is your one-stop shop for all your needs. From the latest technology to the most exotic goods, you'll find everything you need to embark on your next adventure. So why wait? Start browsing our collection today and discover the endless possibilities of JabbaSouk.<br>
+May the Force be with you!
+      </p>
+        
+    </div>
+  </div>
+</div>
