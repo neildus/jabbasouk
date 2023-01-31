@@ -1,0 +1,20 @@
+<div class="main-devise-container">
+  <div class="d-flex justify-content-between align-content-*-center ">
+    <div class="col mb-1">
+      <div class="devise-c-form" style="text-align:center;">
+
+       <h3>Confirm your order</h3>
+        <br>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bl3mhw8t.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin:auto;"  loop  autoplay></lottie-player> 
+        <br>
+        <p> Please confirm your order of "//Product title//". Our system will teleport this order to you. </p>
+        <br>
+        <%= simple_form_for @booking do |f| %>
+          <%= f.submit placeholder: "Activate Teleportation", class: "button" %>
+        <% end %>
+
+      </div>
+    </div>
+  
+</div>
