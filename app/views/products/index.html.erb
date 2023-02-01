@@ -70,8 +70,8 @@
 						<br> <i class="far fa-star"></i>
 						<h4><%= product.title %></h4>
 						<p class="excerpt"><%= product.description %></p>
-						<h6>Price: </h6>
-						<p><%= product.price %></p>
+						<h5>Price: <%= product.price %></h5>
+						<br>
 						<button class="button">
 							<%= link_to "View Product", product_path(product) %>
 						</button>
