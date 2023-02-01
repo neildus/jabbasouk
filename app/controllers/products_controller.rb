@@ -23,6 +23,10 @@ class ProductsController < ApplicationController
   def show
   end
 
+  def average_rating
+    ratings.average(:star)
+  end
+
   def destroy
     @product.destroy
     redirect_to product_path, status: :see_other
