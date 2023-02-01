@@ -1,0 +1,27 @@
+
+  <div class="main-container">
+  <div class="home-container p-5 mt-5">
+
+    <h1 style="font-weight: regular;"> My Orders </h1>
+    <p> Here you can see your orders </p>
+    <br>
+    <hr>
+    <% @bookings.each do |booking| %>
+			<div class="col" style="padding: 20px;">
+				<div class="d-line" style="padding: 10px;">
+					<div class="d-flex flex-row">
+          <div class="p-2">
+						<img src="<%= booking.product.photo %>" style="width: 100px;height: 100px; border-radius: 60px; display: inline;">
+						</div>
+            <div class="p-2">
+            <h4><%= booking.id %> . <%= booking.product.title %></h4>
+						<p><%= booking.product.description %></p>
+            <%= link_to "Order Again", products_path, class: "linkover" %>
+            </div>
+					</div>
+				</div>
+			</div>
+			<% end %>
+
+  </div>
+<div>
