@@ -10,6 +10,19 @@
     <hr>
     <h6 style="font-family:'orbitron', sans-serif;"> Here are your recent orders:</h6>
 
+    <% @bookings.each do |booking| %>
+			<div class="col" style="padding: 20px;">
+				<div class="card" style="padding: 30px;">
+					<div class="card-body">
+						<br><img src="<%= booking.product.photo %>" style="width: 250px;height: 250px;display: flex; border-radius: 20px;">
+						<br> <i class="far fa-star"></i>
+						<h4><%= booking.product.title %></h4>
+						<p class="excerpt"><%= booking.product.description %></p>
+					</div>
+				</div>
+			</div>
+			<% end %>
+
 
 
 
