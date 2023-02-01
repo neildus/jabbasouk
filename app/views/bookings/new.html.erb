@@ -10,7 +10,7 @@
         <br>
         <p> Please confirm your order of "//Product title//". Our system will teleport this order to you. </p>
         <br>
-        <%= simple_form_for @booking do |f| %>
+        <%= simple_form_for Booking.new do |f| %>
           <%= f.submit placeholder: "Activate Teleportation", class: "button" %>
         <% end %>
 
