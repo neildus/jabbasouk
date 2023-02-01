@@ -18,6 +18,8 @@
             </div>
             <div class="col-md-6" style="padding-right: 130px;"><i class="far fa-star"></i><br>
                 <%= link_to "< Back to all products", products_path, class: "linkover" %>
+                <br>
+                <br><h5> <i class="fa-solid fa-star"></i> <%= @product.star %> </h5>
                 <h1><%= @product.title %></h1>
                 <p><%= @product.description %></p>
                 <h5 class="price"><strong>Price:</strong> <%= @product.price %></h5>
