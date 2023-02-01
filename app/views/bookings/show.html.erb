@@ -10,6 +10,7 @@
         <br>
         <p> Our state-of-the-art teleportation device successfully delivered your </p><h4> <%= @booking.product.title %> </h4>
         <p> Please rate your product below </p>
+        <%= render "ratings/form", product: @product %>
         <br>
       </div>
     </div>
