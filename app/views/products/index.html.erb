@@ -4,7 +4,11 @@
 			<div class="row h-100">
 				<div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
 					<div>
-					<h3 style="font-family:'orbitron', sans-serif;"> Hello there!  <%= current_user.name %> </h3>
+					<h3 style="font-family:'orbitron', sans-serif;"> Hello there! <% if user_signed_in? %>
+        <%= current_user.name %>
+   <% else %>
+        <%= "Padawan!" %>
+   <% end %>
 						<h1>Welcome to JabbaSouk</h1>
 						<br>
 						<p>The JabbaSouk marketplace is a large metropolis filled with vendors, merchants,<br> and traders from all over the galaxy.</p>
