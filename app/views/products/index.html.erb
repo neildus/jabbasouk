@@ -4,12 +4,7 @@
 			<div class="row h-100">
 				<div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
 					<div>
-					<h3 style="font-family:'orbitron', sans-serif;"> Hello there <% if user_signed_in? %>
-        <%= current_user.name %>!
-   <% else %>
-        <%= "Padawan!" %>
-   <% end %>
-          </h3>
+					<h3 style="font-family:'orbitron', sans-serif;"> Hello there!  <%= current_user.name %> </h3>
 						<h1>Welcome to JabbaSouk</h1>
 						<br>
 						<p>The JabbaSouk marketplace is a large metropolis filled with vendors, merchants,<br> and traders from all over the galaxy.</p>
@@ -53,7 +48,7 @@
       player.pause();
       playPauseButton.innerHTML = "Play";
     }
-
+		
   }
 </script>
 			</div>
@@ -66,17 +61,16 @@
 <hr>
 <h6 style="font-family:'orbitron', sans-serif; text-align: right;"> Listing <%= @products.count %> products available</h6>
 
-	<div class="row" style="margin-top: 50px;margin-bottom: 50px;margin-right: 15px;margin-left: 15px;">
+	<div class="row mt-5 justify-content-md-left">
 		<% @products.each do |product| %>
-			<div class="col" style="padding: 20px;">
+			<div class="col-md-auto" style="padding: 20px;">
 				<div class="card" style="padding: 30px;">
 					<div class="card-body">
 						<br><img src="<%= product.photo %>" style="width: 250px;height: 250px;display: flex; border-radius: 20px;">
 						<br><h5> <i class="fa-solid fa-star"></i> <%= product.star %> </h5>
 						<h4><%= product.title %></h4>
 						<p class="excerpt"><%= product.description %></p>
-						<br>
-						<h5 class="price"><strong>Price:</strong> <%= product.price %></h5>
+						<h5>Price: <%= product.price %></h5>
 						<br>
 						<button class="button">
 							<%= link_to "View Product", product_path(product) %>
