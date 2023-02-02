@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @rating = Rating.new
   end
 
   def average_rating
@@ -35,16 +36,13 @@ class ProductsController < ApplicationController
   private
 
   def set_product
-    def set_product
-      @product = Product.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "Product not found"
-      redirect_to products_path
-    end
-      end
+    @product = Product.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "Product not found"
+    redirect_to products_path
+  end
 
   def product_params
     params.require(:product).permit(:title, :price, :description, :photo)
   end
-
 end

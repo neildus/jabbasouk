@@ -6,6 +6,7 @@ class BookingsController < ApplicationController
   end
 
   def show
+    @rating = Rating.new
   end
 
   def new
