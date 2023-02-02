@@ -16,7 +16,7 @@
             <div class="p-2">
             <h4><%= booking.id %> . <%= booking.product.title %></h4>
 						<p><%= booking.product.description %></p>
-            <%= link_to "Order Again", products_path, class: "linkover" %>
+            <br><h5> <i class="fa-solid fa-star"></i> <%= booking.product.star %> </h5>
             </div>
 					</div>
 				</div>
