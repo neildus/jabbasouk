@@ -9,7 +9,7 @@ class RatingsController < ApplicationController
     @rating.user = current_user
     @rating.product_id = Booking.find(params[:booking_id]).product_id
      if @rating.save
-      redirect_to product_path(@product)
+      redirect_to "/thankyou"
     else
       render :new, status: :unprocessable_entity
     end

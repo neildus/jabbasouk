@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'account', to: 'pages#account'
   get 'yoda', to: 'pages#yoda'
+  get 'thankyou', to: 'pages#thankyou'
 
   resources :users
   resources :products
