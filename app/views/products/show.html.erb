@@ -4,9 +4,9 @@
             <div class="container py-4 py-xl-5">
                 <div class="row gy-4 gy-md-0">
                     <div class="col-md-6 d-md-flex align-items-md-center">
-                      
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -23,13 +23,16 @@
                 <h1><%= @product.title %></h1>
                 <p><%= @product.description %></p>
                 <h5 class="price"><strong>Price:</strong> <%= @product.price %></h5>
-            
-                <br><br>
-                 <%= simple_form_for Booking.create do |f| %>
-                 <%= f.hidden_field :product_id, value: @product.id %>
-                 <%= f.submit 'Order Now',class: "button" %>
-                 <% end %>
 
+                <br><br>
+                <% if user_signed_in? %>
+                <%= simple_form_for Booking.create do |f| %>
+                <%= f.hidden_field :product_id, value: @product.id %>
+                <%= f.submit 'Order Now',class: "button" %>
+                <% end %>
+                <% else %>
+                <%= button_to 'Sign In to Order', '/users/sign_in', method: "get", class: "button" %>
+                <% end %>
             </div>
         </div>
      </div>
