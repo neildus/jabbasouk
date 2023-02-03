@@ -22,7 +22,7 @@
                 <br><h5> <i class="fa-solid fa-star"></i> <%= @product.star %> </h5>
                 <h1><%= @product.title %></h1>
                 <p><%= @product.description %></p>
-                <h5 class="price"><strong>Price:</strong> <%= @product.price %></h5>
+				<h5> <div class="price" style="display: inline;">*</div> <%= @product.price %></h5>
 
                 <br><br>
                 <% if user_signed_in? %>

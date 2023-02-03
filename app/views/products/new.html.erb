@@ -3,9 +3,9 @@
     <div class="col mb-1">
       <div class="devise-c-form">
 
-       <h3>Create a new product</h3>
+       <h3>Sell your stuff!</h3>
         <br>
-        <p> Add your product to sell here, and we will take care of the rest! </p>
+        <p> Add your product for sale here, and we will take care of the rest! </p>
         <br>
         <%= simple_form_for @product do |f| %>
           <%= f.input :title, placeholder: "Insert your product title here" %>
@@ -13,7 +13,7 @@
           <%= f.input :price, as: :numeric, placeholder: "500" %>
           <%= f.input :photo, placeholder: "https://linktoyourimage.jpg" %>
           <br>
-          <%= f.submit class: "button" %>
+          <%= f.submit 'Sell this item',class: "button" %>
         <% end %>
 
       </div>
@@ -23,7 +23,7 @@
                 width: 600, crop: :fill) %>
   <br><br>
   <div class="text-center">
-  <h3> * Free bounty offers! *</h3>
+  <h3> # Free bounty offers! # </h3>
   <p> List your item for free on our website and enjoy free bounty packages! Offers exclusively to JabbaSouk customers. If ever you are being hunted by a bounty hunter note that we offer the posibility to pay your bounty and guess what! You will be staying alive. Contact our bounty hunter department for more info. </p>
   <br>
   <button class="button">
