@@ -192,12 +192,12 @@
 .content-header {
   font-size: 80px; 
   font-family: 'star_jediregular' ; 
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }
 
 .content-body {
   font-size: 80px;
   font-family:'ubuntu';
   font-weight: 900;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }

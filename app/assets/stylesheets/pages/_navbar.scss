@@ -4,7 +4,7 @@
   background-color: rgba(255, 255, 255, 0);
   border: 3px;
   border-radius: 20px;
-  border-color: rgb(255, 213, 78);
+  border-color: $sw-primary;
   border-style: solid;
   padding: 15px 15px 15px 15px;
   width: 1200px;
@@ -16,7 +16,7 @@
   float: left;
   font-size: 16px;
   font-family: "orbitron", sans-serif;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,6 +37,6 @@
 .navbar-expand-sm .navbar-nav .dropdown-menu {
   position: absolute;
   background-color: black;
-  border-color: rgb(255, 213, 78);
+  border-color: $sw-primary;
   border-radius: 20px;
 }
