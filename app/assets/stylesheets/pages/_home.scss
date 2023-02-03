@@ -10,7 +10,7 @@
   box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
   -webkit-box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
   -moz-box-shadow: 10px 10px 35px -24px rgba(0,0,0,0.35);
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
   border: 3px !important;
   border-color: rgba(255, 214, 78, 0.837) !important;
   border-style: solid !important;
@@ -27,7 +27,7 @@
   background-color: rgba(255, 255, 255, 0);
   border: 3px;
   border-radius: 20px;
-  border-color: rgb(255, 213, 78);
+  border-color: $sw-primary;
   border-style: solid;
   overflow: hidden;
   padding: 50px 0 50px 0;

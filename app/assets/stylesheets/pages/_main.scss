@@ -26,35 +26,35 @@ body {
 h1 {
   font-family: 'star_jediregular';
   font-size: 55px;
-  color: rgb(255, 213, 78);
+  color:$sw-primary;
 }
 
 h2 {
   font-family: 'star_jediregular';
   font-size: 48px;
   font-weight: 600;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }
 
 h3 {
   font-family: 'star_jediregular';
   font-size: 30px;
   font-weight: 600;
-  color: rgb(255, 213, 78);
+  color:$sw-primary;
 }
 
 h4 {
   font-family: 'star_jediregular';
   font-size: 25px;
   font-weight: 600;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }
 
 h5 {
   font-family: "orbitron", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }
 
 
@@ -62,7 +62,7 @@ h6 {
   font-family: 'star_jediregular';
   font-size: 16px;
   font-weight: 600;
-  color: rgb(255, 213, 78);
+  color: $sw-primary;
 }
 
 p {
@@ -73,12 +73,12 @@ p {
 }
 
 hr {
-  background-color: rgb(255, 214, 78);
+  background-color: $sw-primary;
   height: 5px;
   opacity: 1 !important;
 }
 
 .linkover:hover {
-  color: rgb(255, 214, 78);
+  color: $sw-primary;
   text-decoration: underline;
 }

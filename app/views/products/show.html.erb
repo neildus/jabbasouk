@@ -28,10 +28,10 @@
                 <% if user_signed_in? %>
                 <%= simple_form_for Booking.create do |f| %>
                 <%= f.hidden_field :product_id, value: @product.id %>
-                <%= f.submit 'Order Now',class: "button" %>
+                <%= f.submit "Order Now", class: "button" %>
                 <% end %>
                 <% else %>
-                <%= button_to 'Sign In to Order', '/users/sign_in', method: "get", class: "button" %>
+                <%= button_to "Sign In to Order", "/users/sign_in", method: "get", class: "button" %>
                 <% end %>
             </div>
         </div>
@@ -43,5 +43,3 @@
 <h3> Disclaimer </h3>
 <p style="font-size: 12px;"> Goods once sold cannot be returned or exchanged. Even though we are selling defective products we sincerely hope that you won't be reading that text as it's sooooo annoying to read text and you have better things to do. Hmm wait a minute so you are actually reading it! Well, too late now, the product is yours muah muah muah. No seriously, don't return it... please. okay fine you got 1 day to return it.. but you are not getting your money back. Sowry.</p>
 </div>
-
-<
