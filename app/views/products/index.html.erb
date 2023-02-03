@@ -76,8 +76,8 @@
 						<br><img src="<%= product.photo %>" style="width: 250px;height: 250px;display: flex; border-radius: 20px;">
 						<br><h5> <i class="fa-solid fa-star"></i> <%= product.star %> </h5>
 						<h4><%= product.title %></h4>
-						<p class="excerpt"><%= product.description %></p>
-						<h5>Price: <%= product.price %></h5>
+						<p><%= product.description %></p>
+						<h5> <div class="price" style="display: inline;">*</div> <%= product.price %></h5>
 						<br>
 						<button class="button">
 							<%= link_to "View Product", product_path(product) %>
