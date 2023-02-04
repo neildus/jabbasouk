@@ -1,6 +1,6 @@
 <div class="main-container">
 	<div class="hero-home">
-	
+
 		<div class="home-container h-100">
 			<div class="row h-100">
 				<div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
@@ -54,7 +54,7 @@
       player.pause();
       playPauseButton.innerHTML = "Play";
     }
-		
+
   }
 </script>
 
@@ -74,7 +74,17 @@
 				<div class="card" style="padding: 30px;">
 					<div class="card-body">
 						<br><img src="<%= product.photo %>" style="width: 250px;height: 250px;display: flex; border-radius: 20px;">
-						<br><h5> <i class="fa-solid fa-star"></i> <%= product.star %> </h5>
+
+           <%
+              product_ratings = @ratings.select { |rating| rating.product_id == product.id }
+              avg_rating = product_ratings.empty? ? 0 : product_ratings.sum(&:star) / product_ratings.count
+              avg_rating = 0 if avg_rating.nil?
+            %>
+
+            <br><h5> <i class="fa-solid fa-star"></i> <%= avg_rating %> </h5>
+
+
+
 						<h4><%= product.title %></h4>
 						<p><%= product.description %></p>
 						<h5> <div class="price" style="display: inline;">*</div> <%= product.price %></h5>
