@@ -38,6 +38,7 @@
   border-radius: 50%;
   display: none;
   animation: glitch 1.5s ease-in-out infinite;
+  z-index: 999;
 }
 
 @keyframes glitch {
