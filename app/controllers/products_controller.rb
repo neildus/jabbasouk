@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   before_action :set_user_product, only: %i[edit update destroy]
   def index
     @products = Product.all
+    @ratings = Rating.all
   end
 
   def new
