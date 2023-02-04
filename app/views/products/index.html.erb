@@ -16,7 +16,22 @@
 						<br>
 						<button class="button">
 							<%= link_to "Sell an item", "/products/new" %>
-						</button>
+						</button> &nbsp; &nbsp; 
+						<button id="loadHologram" class="button">Need Help?</button>
+                <div id="hologram"></div>
+                <script>
+const button = document.querySelector("#loadHologram");
+button.addEventListener("click", function() {
+  if (hologram.style.display === "none") {
+    hologram.style.display = "block";
+    button.textContent = "End call with the droid";
+  } else {
+    hologram.style.display = "none";
+    button.textContent = "Load Hologram";
+  }
+});
+
+      </script>
 					</div>
 				</div>
 			</div>
